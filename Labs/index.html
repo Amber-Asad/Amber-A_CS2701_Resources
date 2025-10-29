@@ -8,19 +8,17 @@
 </head>
 <body>
     <!-- Top Banner -->
-    <header class="banner">
-    </header>
+    <header class="banner"></header>
 
     <!-- Navigation Bar -->
-<nav class="navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="help.html">Help</a></li>
-    </ul>
-</nav>
-
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
 
     <!-- Page Layout -->
     <div class="container">
@@ -36,7 +34,7 @@
         <!-- Main Form Area -->
         <main class="main-content">
             <h2>Register</h2>
-            <form>
+            <form id="registrationForm" novalidate>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -54,7 +52,10 @@
                     <label for="subscribe">Subscribe to newsletter</label>
                 </div>
 
-                <p>By registering, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+                <p>By registering, you agree to our 
+                    <a href="#">Terms & Conditions</a> and 
+                    <a href="#">Privacy Policy</a>.
+                </p>
 
                 <button type="submit">Register</button>
             </form>
@@ -65,5 +66,8 @@
     <footer class="footer">
         <p>&copy; 2025 Fruit Store. All rights reserved.</p>
     </footer>
+
+    <!-- Link to JavaScript validation file -->
+    <script src="register_validation.js"></script>
 </body>
 </html>
