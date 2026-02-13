@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Banner -->
+    <header class="banner"></header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Layout -->
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <h3>Search</h3>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <button>Go</button>
+            </div>
+        </aside>
+
+        <!-- Main Form Area -->
+        <main class="main-content">
+            <h2>Register</h2>
+            <form id="registrationForm" novalidate>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <small id="nameError" class="error-message"></small>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <small id="emailError" class="error-message"></small>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <small id="passwordError" class="error-message"></small>
+
+                <label for="retype-password">Re-type Password:</label>
+                <input type="password" id="retype-password" name="retype-password" required>
+                <small id="retypeError" class="error-message"></small>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Subscribe to newsletter</label>
+                </div>
+
+                <p>By registering, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+
+                <button type="submit">Register</button>
+            </form>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Fruit Store. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to JS validation file -->
+    <script src="register_validation.js"></script>
+</body>
+</html>
